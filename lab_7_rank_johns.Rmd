@@ -21,7 +21,8 @@ kermit <- read_csv("kermit.csv")
 
 kermit_hist <- ggplot(kermit, aes(x = Score.pre))+
   geom_histogram()+
-  facet_wrap(~Gender)
+  facet_wrap(~Gender)+
+  theme_classic()
 kermit_hist
 ```
 
