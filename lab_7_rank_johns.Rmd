@@ -12,3 +12,16 @@ knitr::opts_chunk$set(echo = TRUE)
 Hi this is Jason and I created this repo and markdown document.
 
 wow this is a nice markdown document. :)
+
+Collaborator Here! This is Erica 
+```{r}
+library(tidyverse)
+
+kermit <- read_csv("kermit.csv")
+
+kermit_hist <- ggplot(kermit, aes(x = Score.pre))+
+  geom_histogram()+
+  facet_wrap(~Gender)
+kermit_hist
+```
+
