@@ -27,7 +27,7 @@ kermit_hist
 ```
 
 
-rank based tests now:
+rank based tests now from lily:
 ```{r}
 #is there a sig difference in pretalk kermit scores for males and females
 
@@ -40,4 +40,6 @@ mwukermit
 
 #retain ho that there is no signficant difference in pretalk kermit ranks. #technically median can be used if distributions are similar across groups otherwise just ranks 
 ```
+
+
 
