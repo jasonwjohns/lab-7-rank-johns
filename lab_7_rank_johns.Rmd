@@ -26,6 +26,7 @@ kermit_hist <- ggplot(kermit, aes(x = Score.pre))+
 kermit_hist
 ```
 
+
 Creator: doing some rank-based tests.
 
 ```{r}
@@ -45,4 +46,20 @@ There is no significant difference in pre-talk permit ranks for males and female
 
 Jason
 
+
+=======
+
+rank based tests now:
+```{r}
+#is there a sig difference in pretalk kermit scores for males and females
+
+#wilcox is what you use for mann but unpaired
+#unpaired so we are going to use Mann-whitney U 
+mwukermit <- kermit %>% 
+  wilcox.test(Score.pre ~ Gender, data= .)
+
+mwukermit
+
+#retain ho that there is no signficant difference in pretalk kermit ranks. #technically median can be used if distributions are similar across groups otherwise just ranks 
+```
 
