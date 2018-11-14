@@ -63,3 +63,9 @@ mwukermit
 #retain ho that there is no signficant difference in pretalk kermit ranks. #technically median can be used if distributions are similar across groups otherwise just ranks 
 ```
 
+
+```{r}
+wsr_kermit <- wilcox.test(kermit$Score.pre, kermit$Score.post, paired = TRUE)
+wsr_kermit
+```
+
